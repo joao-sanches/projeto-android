@@ -25,7 +25,9 @@
     --font01: 'starjedi';
     --font02: 'selectric';
 }
-
+p {
+    font-family: var(--font02);
+}
 body {
     background-color: rgb(196, 196, 196);
 }
