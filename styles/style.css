@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'selectric';
+    src: url('../fonts/selectric-script.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'starjedi';
+    src: url('../fonts/starjedi.ttf') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #FF19BD;
+    --cor02: #E600A4;
+    --cor03: #99006D;
+    --cor04: #22E600;
+    --cor05: #179900;
+    --font01: 'starjedi';
+    --font02: 'selectric';
+}
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+header {
+    background-image: linear-gradient(to bottom,var(--cor04), var(--cor05));
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 70px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font01);
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+    
+}
+
+header > h1:hover {
+    font-size: 3.1em;
+    transition: 0.5s;
+    margin: -1px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.800);
+}
+
+header > p {
+    color: white;
+    font-family: var(--font01);
+    font-size: 1em;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.350);
+}
+
+header > p:hover {
+    font-size: 1.1em;
+    transition: 0.5s;
+    margin: -1px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.800);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.253);
+    margin-top: -37px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 10px;
+    margin: 0px 5px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.800);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.350);
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 20px;
+    border-radius: 2px;
+}
+
+article > h1 {
+    background-color: var(--cor03);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+article > h2 {
+    background-color: var(--cor03);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 50px;
+}
+article > p {
+    text-align: justify;
+    text-indent: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+section > aside { 
+    background-color: var(--cor05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section > aside > h1 {
+    background-color: var(--cor03);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-right: -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section > aside > p {
+    text-align: justify;
+    text-indent: 50px;
+    padding: 10px;
+    padding-bottom: 2px;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+main > aside {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 20px;
+    margin: 10px 0px;
+    border-radius: 2px;
+}
+
+main > aside > h1 {
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    }
+
+main > aside > p {
+    background-color: var(--cor03);
+    color: white;
+    text-align: justify;
+    text-indent: 50px;
+    padding: 20px;
+    margin: -2px 25px;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+footer {
+    background-color: var(--cor03);
+    padding: 5px;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover {
+    font-size: 1em;
+    text-shadow: 2px 2px 2px black;
+}
